@@ -1,0 +1,100 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.heading{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 27px;
+}
+
+.master-web{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 27px;
+}
+
+.sub-container{
+    border-radius: 24px;
+    border: 1px solid #bdbdbd;
+    width: 380px;
+    height: 590px;
+    padding: 50px;
+}
+
+.bottom-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 200px;
+    height: 30px;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-section{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.button{
+    font-variant: normal;
+    height: 38px;
+
+}
+
+.username{
+    color: #828282;
+    font-weight: 600;
+}
+
+.grey-text{
+    color: #828282;
+    font-size: 14px;
+}
+
+.icon{
+    color: #828282;
+    border: 1px solid #828282;
+    padding: 8px;
+    border-radius: 50px;
+    margin-right: 25px;
+}
+
+.iconi{
+    color: #828282;
+    border: 1px solid #828282;
+    padding: 8px;
+    border-radius: 50px;
+}
+
+.login-link{
+    color: #03a9fc;
+
+}
+
+.grey-text-one{
+    margin-top: 28px;
+}
+
+.grey-text-two{
+    margin-top: 22px;
+}
