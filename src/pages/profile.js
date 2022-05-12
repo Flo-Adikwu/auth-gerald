@@ -11,12 +11,12 @@ const Profile = () => {
     return (
         <>
             <Navbar />
-            <div className="container">
-                <div className='heading'>
+            <div className="cntainer">
+                <div className='headng'>
                     <span className='personal-info'>Personal Info</span><br/>
                     <span className='basic'>Basic info like your name and photo</span>
                 </div>
-                <div className="sub-container">
+                <div className="sub-cntainer">
                     <div className='partition-div'>
                     <div>
                         <span className='profile'>Profile</span><br/>
@@ -49,7 +49,7 @@ const Profile = () => {
                         <p className='left'>************</p>
                     </div>
                 </div>
-                <div className="bottom-items">
+                <div className="bottm-section">
                     <p className='grey-text'>Created by <a href="#" className="username">username</a></p>
                     <p className='grey-text'>devChallenges.io</p>
                 </div>

@@ -2,12 +2,12 @@ body{
     font-family: 'Noto Sans', sans-serif;
 }
 
-.bottom-section{
-    text-align: center;
-    margin-top: 40px;
+.bottm-section{
+    display: flex;
+    justify-content: space-between;
 }
 
-.sub-container{
+.sub-cntainer{
     border-radius: 24px;
     border: 1px solid #bdbdbd;
     width: 800px;
@@ -22,7 +22,7 @@ body{
     justify-content: space-between;
 }
 
-.container{
+.cntainer{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -54,7 +54,7 @@ img{
     font-size: 18px;
 }
 
-.heading{
+.headng{
     text-align: center;
     margin-top: 25px;
 }
