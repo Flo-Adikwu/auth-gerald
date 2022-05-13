@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../asset/images/logo.png';
 import { TextField, Button } from '@mui/material';
-import "./login.css";
+import "../styles/login.css";
 import GoogleIcon from '@mui/icons-material/Google';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -15,6 +15,7 @@ const Login = () => {
     const navigate = useNavigate()
 
     const onLogin =()=>{
+        //do api call here
         navigate("/profile")
 
     }

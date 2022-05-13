@@ -47,7 +47,7 @@ const Navbar = () => {
     }
 
     return (
-        <AppBar style={{ background: "#fff" }}>
+        <AppBar style={{ background: "#fff" }} elevation={0}>
             <Container maxWidth="xl">
                 <Toolbar enableGutters>
                     <img src={logo} alt="logo" style={{ width: "210px", height: "30px" }} />
