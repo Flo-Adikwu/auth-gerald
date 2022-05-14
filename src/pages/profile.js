@@ -4,6 +4,7 @@ import '../styles/profile.css';
 import logo from '../asset/images/logo192.png';
 import { Button } from '@mui/material';
 import Edit from './edit';
+import ModalComp from '../components/modal';
 
 
 
@@ -11,7 +12,15 @@ import Edit from './edit';
 const Profile = (props) => {
     const [edit, setEdit]= useState(false);
     const [profile, setProfile]= useState(true);
+    const [open, setOpen] = useState(false);
 
+    const handleOpen = () => {
+      setOpen(true);
+    };
+
+    const handleClose = () => {
+      setOpen(false);
+    };
     const onEdit=()=>{
         setEdit(true);
         setProfile(false)
@@ -20,6 +29,11 @@ const Profile = (props) => {
     const onClickBack=()=>{
         setEdit(false);
         setProfile(true)
+    }
+
+    const onChangePassword=()=>{
+        //do api call here
+        setOpen(false);
     }
 
     return (
@@ -60,7 +74,7 @@ const Profile = (props) => {
                     </div><hr />
                     <div className='sec'>
                         <p className='grey'>PASSWORD</p>
-                        <p className='left'>************</p>
+                        <p className='left'>************</p><span style={{color: "#03a9fc", cursor:"pointer", marginLeft:"100px"}} onClick={handleOpen}>Change password</span>
                     </div>
                 </div>
                 <div className="bottm-section">
@@ -69,6 +83,7 @@ const Profile = (props) => {
                 </div>
             </div>}
             {edit && (<Edit onClickBack={onClickBack}/>)}
+            {open && (<ModalComp open={open} onClose={handleClose} onChangePassword={onChangePassword}/>)}
         </>
         
     )
